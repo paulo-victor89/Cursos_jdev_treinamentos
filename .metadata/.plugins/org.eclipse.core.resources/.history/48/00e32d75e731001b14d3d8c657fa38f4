@@ -1,0 +1,64 @@
+<html>
+<head>
+<style type="text/css">
+body{
+	text-transform: uppercase;
+}
+</style>
+
+</head>
+<body>
+	<!-- Criação de um formulário para cadastro -->
+
+	<form action="" onsubmit="return validarDados()? true : false">
+		<table style="background: #CFCFCF;">
+			<!-- com esse style vc pode definir a cor da tabela -->
+			<tr>
+				<!-- TR = uma linha TD = Celula -->
+				<td><label>Nome:</label></td>
+				<td><input type="text" id="nome" name="nome"
+					style="border-radius: 5px;"></td>
+			</tr>
+
+
+			<tr>
+				<td><label>Login: </label></td>
+				<td><input type="text" id="login" name="login"
+					style="border-radius: 5px;"></td>
+			</tr>
+
+			<tr>
+				<td><label>Senha: </label></td>
+				<td><input type="password" id="senha" name="senha"
+					style="border-radius: 5px;"></td>
+			</tr>
+			<tr>
+				<td />
+				<!-- Aqui deixa um espaço no botão salvar -->
+				<td><input type="submit" value="Salvar"
+					style="width: 100%; border-radius: 5px;"></td>
+			</tr>
+		</table>
+	</form>
+	<script type="text/javascript">
+		function validarDados() {
+			var nome = document.getElementById("nome").value;
+			var login = document.getElementById("login").value;
+			var senha = document.getElementById("senha").value;
+
+			if (nome == '') {
+				alert('Informe o nome! ');
+				return false;
+			} else if (login == '') {
+				alert('Informe o login! ');
+				return false;
+			} else if (senha == '') {
+				alert('Informe a senha! ');
+				return false;
+			}
+			return true;
+		}
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;pos-java-jdbc&apos;&#x0D;&#x0A;- Original project: &apos;pos-java-jdbc&apos;&#x0D;&#x0A;- Original element: &apos;pos-java-jdbc/src/main/java/pos_java_jdbc.pos_java_jdbc&apos;" description="Delete element" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;pos_java_jdbc.pos_java_jdbc" element2="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;pos_java_jdbc" elements="2" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1612990621421" subPackages="false" version="1.0"/>
+</session>

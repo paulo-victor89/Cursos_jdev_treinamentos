@@ -1,0 +1,45 @@
+package pvictor.classes;
+
+public class Secretario extends Pessoa {
+
+	private String registro;
+	private String nivelCargo;
+
+	public String getRegistro() {
+		return registro;
+	}
+
+	public void setRegistro(String registro) {
+		this.registro = registro;
+	}
+
+	public String getNivelCargo() {
+		return nivelCargo;
+	}
+
+	public void setNivelCargo(String nivelCargo) {
+		this.nivelCargo = nivelCargo;
+	}
+
+	@Override
+	public String toString() {
+		return "Secretario ["+"\nregistro=" + registro + ", nivelCargo=" + nivelCargo
+				+ "\n,nome=" + nome + ", idade=" + idade + ", dataNascimento=" + dataNascimento + "\n,rg=" + rg + ", cpf="
+				+ cpf + ", nomeMae=" + nomeMae + ", nomePai=" + nomePai + "]";
+	}
+	public String msgMaiorIdade() {
+		return this.pessoaMaiorIdade() ? "Secretario e maior de idade" : "Secretario Menor de idade";
+	}
+	@Override
+	public String experienciaPromocao() {
+		return this.experienciaPromocao();
+	}
+
+	@Override
+	public double salario() {
+		return 1800.80 * 0.9;
+	}
+
+
+		
+}

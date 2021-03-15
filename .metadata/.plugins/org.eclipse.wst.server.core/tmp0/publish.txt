@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Sat Nov 28 23:07:21 BRT 2020
+org.eclipse.jst.jee.server\:ProjectTestWildfly=C\:\\apache-tomcat-9.0.1\\wtpwebapps\\ProjectTestWildfly
+org.eclipse.jst.jee.server\:front-end=C\:\\apache-tomcat-9.0.1\\wtpwebapps\\front-end

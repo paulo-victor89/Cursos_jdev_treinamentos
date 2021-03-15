@@ -1,0 +1,54 @@
+package pvictor.aulapoo.digiage;
+
+import java.util.LinkedList;
+import java.util.List;
+
+import javax.swing.JOptionPane;
+
+public class Task2 {
+
+	List<String> lista = new LinkedList<String>();
+
+	// ------------- Adicionar -------------------------
+	public void setAddLista(String novo) {
+		lista.add(novo);
+	}
+	// ------------- Remover -------------------------
+
+	public void setRemoverItemDoMeio() {
+		int size = lista.size();
+		lista.remove(size / 2);
+	}
+
+	public void setRemoverItemEspecifico(String item) {
+		setRemoverItemEspecifico(item);
+		// lista.remove(item);
+	}
+
+	// ------------- Consultar ------------------------
+	public void getLista() {
+		// System.out.println("Itens da lista: " + lista);
+		JOptionPane.showMessageDialog(null, "Itens da lista: " + lista);
+
+	}
+
+	public String getPrimeiroItemLista() {
+
+		return getPrimeiroItemLista();
+	}
+
+	public String getUltimoItemLista() {
+
+		return getUltimoItemLista();
+	}
+
+	public String getItemListaEspecifico(int indice) {
+
+		return getItemListaEspecifico(indice);
+	}
+
+	public void getItensDistintos() {
+
+	}
+
+}

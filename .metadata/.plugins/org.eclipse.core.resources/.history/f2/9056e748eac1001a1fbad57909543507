@@ -1,0 +1,25 @@
+package pvictor.executavel.mdl8;
+
+public class OperadorTernario {
+
+	public static void main(String[] args) {
+		int nota1 = 10;
+		int nota2 = 10;
+		int nota3 = 10;
+		int nota4 = 10;
+		int media = 0;
+
+		int soma = nota1 + nota2 + nota3 + nota4;
+		int mediaFinal = soma / 4;
+
+		/* Operadores ternarios são para micro validações, de uma linha apenas. */
+		String saidaResultado;
+
+		saidaResultado = media >= 7 ? "Aluno Aprovado"
+				: (media >= 4 && media <= 6) ? "Aluno em recuperação": "nada";
+
+		System.out.println(saidaResultado + " com a seguinte média: " + media);
+
+	}
+
+}

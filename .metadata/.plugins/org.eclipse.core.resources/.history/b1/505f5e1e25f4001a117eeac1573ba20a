@@ -1,0 +1,50 @@
+package pvictor.aulapoo.digiage;
+
+import javax.swing.JOptionPane;
+
+public class Teste {
+
+	public static void main(String[] args) {
+
+		/*------ Teste TASK1 ---------*/
+        Task1 palavra = new Task1 ();
+        
+        palavra.palindrome("racecar");
+        /*------ Teste TASK2 ---------*/
+        Task2 lista = new Task2 ();
+        
+        lista.setAddLista("Caneta");
+        lista.setAddLista("Caderno");
+        lista.setAddLista("Livro");
+        lista.setAddLista("Caneta1");
+        lista.setAddLista("Caderno1");//Item que será removido.
+        lista.setAddLista("Livro1");
+        
+        
+        lista.getLista();
+        lista.setRemoverItemDoMeio();
+        lista.getLista();
+        //------ Teste TASK3 ---------
+        Task3 lista1 = new Task3();
+        
+        lista1.setListaItemNovo("1Sa");
+        lista1.setListaItemNovo("2Sa");
+        lista1.setListaItemNovo("3Sa");
+        lista1.setListaItemNovo("4Sa");
+        lista1.setListaItemNovo("5Sa");
+                
+        lista1.setListaItemNovo("1Sa");
+        lista1.setListaItemNovo("2Sa");
+        
+        //System.out.println("Lista:"+lista1.getLista());
+        JOptionPane.showMessageDialog(null,"Lista:"+lista1.getLista());
+        
+        lista.getItensDistintos();
+        
+        
+        
+        
+		
+	}
+
+}

@@ -1,0 +1,31 @@
+<html>
+<body>
+	<!-- Criação de um formulário para cadastro -->
+
+	<form action="" >
+		<table style="background: #EE7942; ">
+			<tr> <!-- TR = uma linha TD = Celula -->
+				<td><label>Nome:</label></td>
+				<td><input type="text" id="nome" name="nome" style="border-radius:5px;"></td>
+			</tr>
+
+
+			<tr>
+				<td><label>Login: </label></td>
+				<td><input type="text" id="login" name="login" style="border-radius:5px;"></td>
+			</tr>
+
+			<tr>
+				<td><label>Senha: </label></td>
+				<td><input type="password" id="senha" name="senha" style="border-radius:5px;"></td>
+			</tr>
+			<tr>
+				<td /> <!-- Aqui deixa um espaço no botão salvar -->
+				<td><input type="submit" value="Salvar" style="width: 100%; border-radius:5px;"></td>
+			</tr>
+		</table>
+	</form>
+
+
+</body>
+</html>

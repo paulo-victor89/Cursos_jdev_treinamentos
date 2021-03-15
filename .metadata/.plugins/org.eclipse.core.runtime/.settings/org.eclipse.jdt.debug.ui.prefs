@@ -1,0 +1,3 @@
+eclipse.preferences.version=1
+org.eclipse.jdt.debug.ui.active_filters=java.*,org.eclipse.jdt.launching.internal.*,java.lang.ClassLoader
+org.eclipse.jdt.debug.ui.inactive_filters=com.ibm.*,com.sun.*,javax.*,jrockit.*,org.omg.*,sun.*,sunw.*

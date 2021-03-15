@@ -1,0 +1,8 @@
+package pvictor.executavel.mdl8;
+
+public class OperadoreRelacionais {
+	
+	int nota 1 = 90;
+	int nota 2 =90;
+
+}

@@ -1,0 +1,17 @@
+package pvictor.principio.responsabilidade;
+
+public class TesteConta {
+
+	public static void main(String[] args) {
+		
+		ContaBancaria bancaria = new ContaBancaria();
+		bancaria.setDescricao("Minha conta bancaria");
+		
+		System.out.println(bancaria);
+		
+
+		bancaria.diminui100();
+		System.out.println("Diminuindo 100:"+bancaria);
+	}
+
+}

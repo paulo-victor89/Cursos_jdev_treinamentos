@@ -1,0 +1,13 @@
+<html>
+<body>
+	<!-- Criação de um formulário para cadastro -->
+	
+	<form action="">
+		
+	<label>Nome:</label>
+	<input type="text" id="nome" name="nome">
+	</form>
+
+
+</body>
+</html>

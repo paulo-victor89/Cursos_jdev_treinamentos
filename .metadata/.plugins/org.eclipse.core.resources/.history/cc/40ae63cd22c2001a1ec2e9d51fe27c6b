@@ -1,0 +1,27 @@
+package pvictor.executavel;
+
+import pvictor.classes.Aluno;
+
+public class Main {
+	/* Main é um metodo auto executavel em Java */
+	public static void main(String[] args) {
+
+		/* new Aluno() e uma instancia (Criacao de Objeto)*/
+		/* aluno1 é uma referencia para o objeto aluno*/
+		
+		Aluno aluno1 = new Aluno(); /*João */
+		aluno1.nome = "João";
+		
+		System.out.println("Nome do aluno 1 é: " + aluno1.nome);
+		
+		Aluno aluno2 = new Aluno(); /*Pedro */ 
+		
+		Aluno aluno3 = new Aluno(); /*Paulo */
+		
+		Aluno aluno4 = new Aluno("Maria");
+		
+		Aluno aluno5 = new Aluno("Jose", 8);
+		
+	}
+
+}

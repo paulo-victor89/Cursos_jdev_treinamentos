@@ -1,0 +1,31 @@
+package pvictor.executavel.mdl8;
+
+public class Aninhadas {
+
+	public static void main(String[] args) {
+
+		int nota1 = 2;
+		int nota2 = 5;
+		int nota3 = 8;
+		int nota4 = 9;
+
+		int soma = nota1 + nota2 + nota3 + nota4;
+		int media = soma / 4;
+
+		/* Operações lógicas aninhadas: são operações dentro de operações */
+
+		if (media >= 5) {
+			if (media >= 7) {
+				System.out.println("Aluno aprovado direto");
+			} else {
+				System.out.println("Aluno em recuperaçõa");
+			}
+
+		}
+		String saidaResultado = null;
+
+		System.out.println(saidaResultado + " com a seguinte média: " + media);
+
+	}
+
+}

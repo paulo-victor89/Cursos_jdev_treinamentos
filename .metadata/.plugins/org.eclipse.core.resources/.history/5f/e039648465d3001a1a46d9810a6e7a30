@@ -1,0 +1,17 @@
+package pvictor.executavel.teste.ibm;
+
+import java.net.HttpURLConnection;
+import java.net.URL;
+
+import jdk.nashorn.internal.objects.annotations.Getter;
+
+@Path("/image")
+public class Iservice {
+	
+
+	URL obj = new URL(null);
+	HttpURLConnection con = (HttpURLConnection)obj.openConnection();
+	con.setRe
+	
+	
+}

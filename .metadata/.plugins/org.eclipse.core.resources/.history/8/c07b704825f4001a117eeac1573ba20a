@@ -1,0 +1,39 @@
+package pvictor.aulapoo.digiage;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Task3 {
+	
+	ArrayList<String> lista = new ArrayList<String>();
+	ArrayList<String> distinct = new ArrayList<String>();
+	
+	public void setListaItemNovo(String itemNovo) {
+        lista.add(itemNovo);
+    }
+	
+	public ArrayList<String> getLista() {
+        return lista;
+    }
+	public void getItensDistintos() {
+        int iguais = 0;
+
+        distinct = lista;
+        System.out.println("Lista [distinct]:" + distinct);
+        for (int i = 0; i < lista.size(); i++) {
+
+            for (int j = lista.size() - 1; j >= 0; j--) {
+                if (distinct.get(i).equals(lista.get(j))) {
+                    iguais += 1;
+
+                    break;
+                } else {
+                    break;
+                }
+            }
+        }
+        System.out.println(iguais);
+        System.out.println("Quantidade de itens distintos: " + (distinct.size() - iguais));
+
+    }
+}

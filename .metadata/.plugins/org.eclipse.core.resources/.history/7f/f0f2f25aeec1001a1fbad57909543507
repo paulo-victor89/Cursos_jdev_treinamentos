@@ -1,0 +1,34 @@
+package pvictor.executavel.mdl8;
+
+public class SwitchCase {
+
+	public static void main(String[] args) {
+		int nota1 = 7;
+		int nota2 = 7;
+		int nota3 = 7;
+		int nota4 = 7;
+
+		int soma = nota1 + nota2 + nota3 + nota4;
+		int media = soma / 4;
+
+		
+		/* utilizado para operações exatas */
+		int dia = 1;
+		switch (dia) {
+		case 1:
+			System.out.println("Domigngo");
+			break;
+		case 2:
+			System.out.println("Segunda-feira");
+			break;
+		case 3:
+			System.out.println("Terça-feira");
+			break;
+
+		default:System.out.println("Outro dia qualquer" );
+			break;
+		}
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package pvictor.principio.responsabilidade;
+
+public class ContaBancaria {
+
+	private String descricao;
+
+	private double saldo = 8000;
+
+	public void soma100() {
+		saldo += 100;
+	}
+
+}

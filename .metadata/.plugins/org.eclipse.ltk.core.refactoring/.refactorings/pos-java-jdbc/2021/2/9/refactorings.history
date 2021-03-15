@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;list&apos; in &apos;dao.UserPosDAO.busca()&apos; to &apos;retorno&apos;&#x0D;&#x0A;- Original project: &apos;pos-java-jdbc&apos;&#x0D;&#x0A;- Original element: &apos;dao.UserPosDAO.busca().list&apos;&#x0D;&#x0A;- Renamed element: &apos;list&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;list&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;dao{UserPosDAO.java[UserPosDAO~busca@list!1653!1689!1665!1668!QUserposjava;!0!false" name="retorno" references="true" stamp="1614095216758" version="1.0"/>
+</session>

@@ -1,0 +1,66 @@
+package pvictor.executavel;
+
+import javax.swing.*;
+
+import pvictor.autenticacao.FuncaoAutenticacao;
+import pvictor.classes.Aluno;
+import pvictor.classes.Diretor;
+import pvictor.classes.Pessoa;
+import pvictor.classes.Secretario;
+
+public class MainHeranca {
+
+	public static void main(String[] args) {
+
+		String login = JOptionPane.showInputDialog("Informe o login");
+		String senha = JOptionPane.showInputDialog("Informe a senha");
+
+		if (new FuncaoAutenticacao(new Diretor(login, senha)).autenticar()) {
+
+			JOptionPane.showMessageDialog(null, "Acesso liberado ao sistema! Pressione OK!");
+
+			Aluno aluno = new Aluno();
+			aluno.setNome("Paulo Victor");
+			aluno.setNomeEscola("JDEV - Treinamento");
+			aluno.setIdade(22);
+			System.out.println(aluno);
+			System.out.println(aluno.pessoaMaiorIdade() + " - " + aluno.msgMaiorIdade());
+			System.out.println("O salario do aluno(a) é R$ " + aluno.salario());
+			System.out.println("--------------------------------------------------------------------");
+
+			Diretor diretor = new Diretor();
+			diretor.setNome("Egidio");
+			diretor.setRegistroEducacao("Doutorado");
+			diretor.setIdade(48);
+			System.out.println(diretor);
+			System.out.println(diretor.pessoaMaiorIdade() + " - " + aluno.msgMaiorIdade());
+			System.out.println("O salario do diretor(a) é R$ " + diretor.salario());
+			System.out.println("--------------------------------------------------------------------");
+
+			Secretario secretario = new Secretario();
+			secretario.setNome("Lourdes");
+			secretario.setNivelCargo("Auxiliar");
+			secretario.setIdade(35);
+			System.out.println(secretario);
+			System.out.println(secretario.pessoaMaiorIdade() + " - " + secretario.msgMaiorIdade());
+			System.out.println("O salario do secretario(a) é R$ " + secretario.salario());
+			System.out.println("--------------------------------------------------------------------");
+
+			teste(aluno);
+			teste(diretor);
+			teste(secretario);
+
+		} else{
+			JOptionPane.showMessageDialog(null,
+					"Acesso negado!" + "Login ou Senha inválidos!" + "\n" + "Pressione Ok e tente novamente!");
+		}
+
+	}
+
+	public static void teste(Pessoa pessoa) {
+		System.out.println("Testando o polimorfismo");
+		System.out.println("Essa pessoa é demais " + pessoa.getNome() + " e o salario é " + pessoa.salario());
+
+	}
+
+}

@@ -1,0 +1,6 @@
+package pvictor.executavel.teste.ibm;
+
+@Path("/image")
+public class Iservice {
+
+}

@@ -1,0 +1,27 @@
+package pvictor.executavel.mdl8;
+
+public class SwitchCase {
+
+	public static void main(String[] args) {
+		int nota1 = 2;
+		int nota2 = 5;
+		int nota3 = 8;
+		int nota4 = 9;
+
+		int soma = nota1 + nota2 + nota3 + nota4;
+		int media = soma / 4;
+
+		
+		/* utilizado para operações exatas */
+		switch (media) {
+		case 7:
+			System.out.println("Aluno aprovado");
+			break;
+
+		default:System.out.println("Outro valor:  " + media);
+			break;
+		}
+
+	}
+
+}

@@ -1,0 +1,55 @@
+package pvictor.executavel;
+
+import javax.swing.JOptionPane;
+
+import pvictor.classes.Aluno;
+import pvictor.classes.Disciplina;
+
+public class ArrayVetor {
+
+	public static void main(String[] args) {
+		/*Setando as notas*/
+		double[] notas = {8,9.7,7.0,6.5};
+		double[] notasLogica = {5,6.5,9.0,7};
+
+		/*Criando o aluno*/
+		Aluno aluno = new Aluno();
+		aluno.setNome("Paulo Victor");
+		aluno.setNomeEscola("JDEV Treinamento");
+		
+		/*Criando a disciplina*/
+		Disciplina disciplina = new Disciplina();
+		disciplina.setDisciplina("Curso de Java");
+		disciplina.setNota(notas);
+
+		/*Relacionando o aluno com a disciplina*/
+		aluno.getDisciplinas().add(disciplina);
+		
+		Disciplina disciplina2 = new Disciplina();
+		disciplina2.setDisciplina("Curso de Java");
+		disciplina2.setNota(notasLogica);
+		
+		aluno.getDisciplinas().add(disciplina2);
+	}
+}
+/*
+ * Array pode ser de todos os tipos de dados e objetos também
+ * 
+ * String posicoes =
+ * JOptionPane.showInputDialog("Quantas notas deseja informar?");
+ * 
+ * Array sempre deve ter a quantidade de posições definidas double[] notas = new
+ * double[Integer.parseInt(posicoes)];
+ * 
+ * for (int pos = 0; pos < notas.length; pos++) { String valor =
+ * JOptionPane.showInputDialog("Qual a nota: " + (pos + 1)); notas[pos] =
+ * Double.valueOf(valor);
+ * 
+ * }
+ * 
+ * for (int pos = 0; pos < notas.length; pos++) { Usuario digitando a nota //
+ * JOptionPane.showInputDialog(null,"Digite a primeira Nota " + (pos + 1));
+ * Notas setadas System.out.println("Nota " + (pos + 1) + " = " + notas[pos]);
+ * 
+ * } }
+ */

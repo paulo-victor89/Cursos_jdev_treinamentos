@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Venda.java&apos; to &apos;AulaPOO/src/pvictor.classes&apos;&#x0D;&#x0A;- Original project: &apos;AulaPOO&apos;&#x0D;&#x0A;- Destination element: &apos;AulaPOO/src/pvictor.classes&apos;&#x0D;&#x0A;- Original element: &apos;pvictor.Venda.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;pvictor.classes" element1="/src&lt;pvictor{Venda.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1594844266654" units="1" version="1.0"/>
+</session>

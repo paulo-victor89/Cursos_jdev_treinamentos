@@ -1,0 +1,24 @@
+package pvictor.executavel.mdl8;
+
+public class OperadoreRelacionais {
+	public static void main(String[] args) {
+		int nota1 = 90;
+		int nota2 = 90;
+		int notas = nota1;
+		int notas2 = nota2;
+
+		/*
+		 * // Igualdade if (nota1 == nota2) { System.out.println("A notas são iguais");
+		 * } else { System.out.println("As notas são diferentes"); }
+		 */
+		// Diferente
+		if (nota1 == nota2) {
+			System.out.println("A notas são iguais");
+		} else {
+			System.out.println("As notas são diferentes");
+		}
+
+		System.out.println("As notas digitadas são: "+nota1 + notas2);
+	}
+
+}

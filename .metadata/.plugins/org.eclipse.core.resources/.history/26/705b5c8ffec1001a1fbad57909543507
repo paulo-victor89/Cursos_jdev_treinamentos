@@ -1,0 +1,36 @@
+package pvictor.executavel.mdl8;
+
+public class OperadoreRelacionais {
+	public static void main(String[] args) {
+		int nota1 = 91;
+		int nota2 = 99;
+
+		/*
+		 * // Igualdade 
+		 * if (nota1 == nota2) { System.out.println("A notas são iguais");
+		 * } else { System.out.println("As notas são diferentes"); }
+		 */
+		/* // Diferente
+		if (nota1 != nota2) {
+			System.out.println("A notas são diferentes " + "\nNota 1 = " + nota1 + "\nNota 2 = " + nota2);
+		} else {
+			System.out.println("As notas são iguais" + "\nNota 1 = " + nota1 + "\nNota 2 = " + nota2);
+		}
+		*/
+		// Menor que ou menor=
+				if (nota1 <= nota2) {
+					System.out.println("A nota 1  e menor que a nota 2 " + "\nNota 1 = " + nota1 + "\nNota 2 = " + nota2);
+				} else {
+					System.out.println("As nota 2 e maior que a nota 1" + "\nNota 1 = " + nota1 + "\nNota 2 = " + nota2);
+				}
+				
+				// Maior ou menor=
+				if (nota1 >= nota2) {
+					System.out.println("A nota 1  e maior que a nota 2 " + "\nNota 1 = " + nota1 + "\nNota 2 = " + nota2);
+				} else {
+					System.out.println("As nota 2 e maior que a nota 1" + "\nNota 1 = " + nota1 + "\nNota 2 = " + nota2);
+				}
+
+	}
+
+}

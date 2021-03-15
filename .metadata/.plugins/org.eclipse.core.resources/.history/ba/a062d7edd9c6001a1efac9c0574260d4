@@ -1,0 +1,9 @@
+package pvictor.classes;
+
+public class ExecutarTeste {
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

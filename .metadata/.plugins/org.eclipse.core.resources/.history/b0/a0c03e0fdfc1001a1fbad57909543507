@@ -1,0 +1,32 @@
+package pvictor.executavel.mdl8;
+
+import javax.swing.*;
+
+public class OperadoresLogicosIfElse {
+
+	public static void main(String[] args) {
+		
+		int nome;
+		JOptionPane.showInputDialog("Digite o nome do aluno");
+		double nota1 = Double.parseDouble(JOptionPane.showInputDialog("Digite a nota 1 "));
+		double nota2 = Double.parseDouble(JOptionPane.showInputDialog("Digite a nota 2 "));
+		double nota3 = Double.parseDouble(JOptionPane.showInputDialog("Digite a nota 3 "));
+		double nota4 = Double.parseDouble(JOptionPane.showInputDialog("Digite a nota 4 "));
+		
+		double soma = (nota1 +  nota2  +nota3  + nota4)/4;
+		double media = JOptionPane.showConfirmDialog(null, soma);
+		
+		
+		int mediaAluno = 70;
+		
+		if(mediaAluno >= 70) {
+			System.out.println("Aluno Aprovado");
+		}
+		if(mediaAluno < 70) {
+			System.out.println("Aluno Reprovado");
+		}
+
+		
+	}
+
+}

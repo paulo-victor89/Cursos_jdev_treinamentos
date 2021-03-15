@@ -1,0 +1,5 @@
+package pvictor.principio.responsabilidade;
+
+public class ContaBancaria {
+
+}

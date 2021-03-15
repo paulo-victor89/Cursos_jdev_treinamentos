@@ -1,0 +1,8 @@
+package pvictor.classes;
+
+public class Disciplina {
+
+	private double nota;
+	private String disciplina;
+	
+}

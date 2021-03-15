@@ -1,0 +1,5 @@
+package pvictor.executavel.teste.ibm;
+
+public @interface Path {
+
+}

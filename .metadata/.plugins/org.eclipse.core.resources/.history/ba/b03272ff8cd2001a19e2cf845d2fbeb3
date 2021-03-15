@@ -1,0 +1,67 @@
+package pvictor.executavel;
+
+import pvictor.classes.Aluno;
+import pvictor.classes.Disciplina;
+
+public class ArrayVetor {
+
+	public static void main(String[] args) {
+
+		/* Setando as notas */
+		double[] notas = { 8, 9.7, 7.0, 6.5 };
+		double[] notasLogica = { 5, 6.5, 9.0, 7 };
+
+		/* Criando o aluno */
+		Aluno aluno = new Aluno();
+		aluno.setNome("Paulo Victor");
+		aluno.setNomeEscola("JDEV Treinamento");
+
+		/* Criando a disciplina */
+		Disciplina disciplina = new Disciplina();
+		disciplina.setDisciplina("SQL");
+		disciplina.setNota(notas);
+
+		/* Relacionando o aluno com a disciplina */
+		aluno.getDisciplinas().add(disciplina);
+
+		Disciplina disciplina2 = new Disciplina();
+		disciplina2.setDisciplina("Logica de programação");
+		disciplina2.setNota(notasLogica);
+
+		aluno.getDisciplinas().add(disciplina2);
+
+		System.out.println("Nome do aluno: " + aluno.getNome() + " inscrito no curso: " + aluno.getNomeEscola());
+
+		System.out.println("--------Disciplinas do aluno--------");
+		for (Disciplina disc : aluno.getDisciplinas()) {
+
+			System.out.println("Disciplina: " + disc.getDisciplina());
+			System.out.println("Na disciplina " +disc.getDisciplina()+ " as notas são: ");
+			for (int pos = 0; pos < disc.getNota().length; pos++) {
+				System.out.println("Nota " + (pos + 1) + " = " + disc.getNota()[pos]);
+			}
+
+		}
+	}
+}
+/*
+ * Array pode ser de todos os tipos de dados e objetos também
+ * 
+ * String posicoes =
+ * JOptionPane.showInputDialog("Quantas notas deseja informar?");
+ * 
+ * Array sempre deve ter a quantidade de posições definidas double[] notas = new
+ * double[Integer.parseInt(posicoes)];
+ * 
+ * for (int pos = 0; pos < notas.length; pos++) { String valor =
+ * JOptionPane.showInputDialog("Qual a nota: " + (pos + 1)); notas[pos] =
+ * Double.valueOf(valor);
+ * 
+ * }
+ * 
+ * for (int pos = 0; pos < notas.length; pos++) { Usuario digitando a nota //
+ * JOptionPane.showInputDialog(null,"Digite a primeira Nota " + (pos + 1));
+ * Notas setadas System.out.println("Nota " + (pos + 1) + " = " + notas[pos]);
+ * 
+ * } }
+ */

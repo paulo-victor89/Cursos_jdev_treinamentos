@@ -1,0 +1,22 @@
+<html>
+<body>
+	<!-- Criação de um formulário para cadastro -->
+	
+	<form action="">
+		
+	<label>Nome:</label>
+	<input type="text" id="nome" name="nome">
+	
+	<label>Login: </label>
+	<input type="text" id="login" name="login">
+	
+	<label>Senha: </label>
+	<input type="password" id="senha" name="senha">
+	
+	<input type="submit" value="Salvar">
+	
+	</form>
+
+
+</body>
+</html>

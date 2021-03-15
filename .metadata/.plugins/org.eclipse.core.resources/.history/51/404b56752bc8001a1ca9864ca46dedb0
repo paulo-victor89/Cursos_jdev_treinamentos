@@ -1,0 +1,51 @@
+package pvictor.classes;
+
+public class Diretor extends Pessoa {
+
+	private String registroEducacao;
+	private int tempoDirecao;
+	private String titulacao;
+
+	public String getRegistroEducacao() {
+		return registroEducacao;
+	}
+
+	public void setRegistroEducacao(String registroEducacao) {
+		this.registroEducacao = registroEducacao;
+	}
+
+	public int getTempoDirecao() {
+		return tempoDirecao;
+	}
+
+	public void setTempoDirecao(int tempoDirecao) {
+		this.tempoDirecao = tempoDirecao;
+	}
+
+	public String getTitulacao() {
+		return titulacao;
+	}
+
+	public void setTitulacao(String titulacao) {
+		this.titulacao = titulacao;
+	}
+
+	@Override
+	public String toString() {
+		return "Diretor ["+"\nregistroEducacao= " + getRegistroEducacao()+ ", tempoDirecao= " + getTempoDirecao() 
+				+ ", titulacao= "+ getTitulacao() 
+				+ "\n,nome= " + getNome() + ", idade= " + getIdade() + ", dataNascimento= " + getDataNascimento() 
+				+ "\n,rg="+ getRg() + ", cpf=" + getCpf() + ", nomeMae= " + getNomeMae() + ", nomePai= " + getNomePai() + "]";
+	}
+	public String msgMaiorIdade() {
+		return this.pessoaMaiorIdade() ? "Diretor é maior de idade" : "Diretor é menor de idade";
+	}
+
+	@Override
+	public double salario() {
+		// TODO Auto-generated method stub
+		return 3900.78;
+	}
+	
+
+}
